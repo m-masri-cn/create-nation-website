@@ -13,9 +13,9 @@ const Navbar = () => {
       <div className="flex items-center gap-5">
         <Link
           className="hover:text-red-500 transition-all ease-in-out duration-500 "
-          href="/"
+          href="#who-we-are"
         >
-          Home
+          Who we are
         </Link>
         <Link
           className="hover:text-red-500 transition-all ease-in-out duration-500 "

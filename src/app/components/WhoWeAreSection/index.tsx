@@ -15,7 +15,7 @@ const WhoWeAreSection = () => {
 
   return (
     <div
-      id="services"
+      id="who-we-are"
       className="flex flex-col gap-5 bg-black text-white px-28 py-10"
     >
       <div className="grid grid-cols-5 gap-16">
