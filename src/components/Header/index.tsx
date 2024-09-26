@@ -38,6 +38,7 @@ const Header = () => {
               width={720}
               alt="create nation team members"
               className="h-[600px] object-cover"
+              unoptimized
             />
           </div>
         </div>

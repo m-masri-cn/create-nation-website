@@ -25,7 +25,7 @@ const Navbar = () => {
         </Link>
         <Link
           className="hover:text-red-500 transition-all ease-in-out duration-500 "
-          href="/#work"
+          href="/#our-work"
         >
           Work
         </Link>

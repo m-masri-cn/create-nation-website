@@ -3,20 +3,16 @@ import clsx from "clsx";
 import Image from "next/image";
 import React from "react";
 
-const BG_COLORS = ["#FFF", "#111013eb"];
-const TEXT_COLORS = ["black", "white"];
-
 type Props = {
   service: IService;
   index: number;
 };
 
 const ServiceCard = ({ service, index }: Props) => {
-  const bgIndex = Math.floor(index / 2) % BG_COLORS.length;
-  const textIndex = Math.floor(index / 2) % TEXT_COLORS.length;
+  const isBackgroundBlack = Math.floor(index / 2) % 2 === 0 ? false : true;
 
-  const bgClass = `bg-[${BG_COLORS[bgIndex]}]`;
-  const textClass = `text-${TEXT_COLORS[textIndex]}`;
+  const bgClass = isBackgroundBlack ? "bg-[#111013eb]" : "bg-white";
+  const textClass = isBackgroundBlack ? "text-white" : "text-black";
 
   return (
     <div
